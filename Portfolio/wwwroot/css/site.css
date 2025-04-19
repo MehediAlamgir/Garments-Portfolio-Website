@@ -1,0 +1,142 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Color Scheme */
+:root {
+    --primary-color: #2c3e50; /* Dark blue/navy */
+    --secondary-color: #e74c3c; /* Vibrant red */
+    --accent-color: #f39c12; /* Gold/orange */
+    --light-bg: #f8f9fa; /* Light gray */
+}
+
+/* Header/Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+    .nav-link:hover {
+        color: var(--accent-color) !important;
+    }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), #34495e);
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Carousel Styles */
+.carousel {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-item {
+    height: 70vh;
+    min-height: 400px;
+}
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+.carousel-caption {
+    bottom: 30%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2rem !important;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Carousel Adjustments */
+#heroCarousel {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.carousel-item img {
+    object-position: center 30%;
+}
+
+/* Content Section Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1) !important;
+    }
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
