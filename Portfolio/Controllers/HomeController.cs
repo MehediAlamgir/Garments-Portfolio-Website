@@ -56,9 +56,9 @@ namespace Portfolio.Controllers
                 // Send email notification
                 var emailService = HttpContext.RequestServices.GetService<IEmailService>();
                 var emailBody = $"New inquiry from: {inquiry.CompanyName}<br>Contact: {inquiry.FirstName} {inquiry.LastName}<br>Email: {inquiry.Email}<br>Phone: {inquiry.PhoneNumber}<br><br>Details:<br>{inquiry.InquiryDetails}";
-
+                
                 await emailService.SendEmailAsync(
-                    "your-email@example.com", // Your email address
+                    "misuk32@gmail.com", // Your email address
                     $"New Inquiry from {inquiry.CompanyName}",
                     emailBody);
 
