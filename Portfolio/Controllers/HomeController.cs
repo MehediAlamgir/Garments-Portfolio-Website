@@ -58,7 +58,7 @@ namespace Portfolio.Controllers
                 var emailBody = $"New inquiry from: {inquiry.CompanyName}<br>Contact: {inquiry.FirstName} {inquiry.LastName}<br>Email: {inquiry.Email}<br>Phone: {inquiry.PhoneNumber}<br><br>Details:<br>{inquiry.InquiryDetails}";
                 
                 await emailService.SendEmailAsync(
-                    "misuk32@gmail.com", // Your email address
+                    "", //  ToDo: Need to add  sender email address here
                     $"New Inquiry from {inquiry.CompanyName}",
                     emailBody);
 
